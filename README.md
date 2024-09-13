@@ -1,3 +1,4 @@
+
 # Welcome to Virtuoso Query Interface
 This project has the intention to provide a online web based query interface for Virtuoso. Till now, you can only save queries with a name and run query and see the result with the response time of virtuoso.
 
@@ -26,7 +27,7 @@ from your git bash or console. For the cloning process, I am assuming that you h
 6. After the installation, the project is ready to run in your local machine. Now run the command
 `npm run dev`
 which will start the server at port (default) at http://localhost:3000. Go to the port from your browser and run query.
-7. You can also save a query with a name from the address http://localhost:3000/insertQuery.\ 
+7. You can also save a query with a name from the address http://localhost:3000/insertQuery.\
 &nbsp;
 
 ##  **Others Way to Run**
@@ -60,8 +61,6 @@ which will start the server at port (default) at http://localhost:3000. Go to th
 	* And then just like ***3***, save a new query.
 	* When you click **Submit**, a new dataset name will be added and the query will be saved under that dataset name.
 
-Don't forget to give feedbacks at tonmoy.csecu@gmail.com and give the Github [Repository](https://github.com/Brainless-Loco/virtuoso-query-interface) a star if you liked it.
+Don't forget to give feedbacks at tonmoy.csecu@gmail.com and give the Github [Repository](https://github.com/Brainless-Loco/BEdKG-Query-Interface) a star if you liked it.
 
-"# MuseumDataset-Query-Interface" 
-"# BEdKG-Query-Interface" 
-"# BEdKG-Query-Interface" 
+# BEdKG Query Interface

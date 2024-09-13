@@ -115,10 +115,12 @@ const MyFormComponent = () => {
             />
             <TextField value={nameValue} onChange={(newValue)=>{setnameValue (newValue.target.value)}} sx={{width:'49.5%'}} id="name-of-the-query" label="Name" variant="outlined" />
           </Box>
-          <div style={{margin:'8px',marginTop:'2px',height:'68vh',border:'1px solid gray',borderRadius:'8px',overflow:'hidden',}}>
+          
+          {/* <Editor defaultLanguage='sparql' value={editorValue} onChange={editorValueUpdate}/> */}
+          <div style={{margin:'8px',marginTop:'2px',height:'70vh',border:'1px solid gray',borderRadius:'8px',overflow:'hidden',}}>
               <Editor defaultLanguage='sparql' value={editorValue} onChange={editorValueUpdate}/>
           </div>
-          <div style={{display:'flex',justifyContent:'center',marginBottom:'5px'}}>
+          <Box  sx={{marginY:'10px',textAlign:'center'}}>
               <Button
                   disabled={!nameValue.length || !editorValue.length || !queryType.length}
                   onClick={insertData}
@@ -130,7 +132,7 @@ const MyFormComponent = () => {
                       color:'#0d4d15'
                       },
                   }}>Submit</Button>
-          </div>
+          </Box>
           <Footer/>
           {/* {loading && <Box sx={{ zIndex:'5', position:'absolute',top:'0%',backdropFilter: 'blur(5px)', width:'100%', display: 'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',height:'100%' }}>
             <h2>Saving the Query</h2><br/>
