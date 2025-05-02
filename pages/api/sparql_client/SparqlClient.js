@@ -5,8 +5,8 @@ module.exports = class SparqlClient {
     constructor(endpoint, user, password) {
         this.user = user ?? 'dba'
         this.password = password ?? 'dba'
-        this.endpoint = endpoint ?? `http://103.94.131.241:8894/sparql`
-        // `http://${getIPV4()}:8890/sparql`
+        this.endpoint = endpoint ?? `http://103.94.129.60:8894/sparql`
+        // this.endpoint = `http://${getIPV4()}:8890/sparql`
     }
 
     async query(sparql) {
